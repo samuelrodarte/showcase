@@ -1,5 +1,6 @@
 @use'../start_abstract' as *;
 /*This is button*/
+
 .btn{
    text-align: start;
    padding: 1.1em;
@@ -24,3 +25,16 @@
     
 }
 
+@media (min-width: #{$width-small-tablets}) {
+    .super__btn{
+        width: auto;
+        
+        
+    }
+
+    .btn{
+        border-radius: 10px 10px 10px 10px; 
+        padding: 0.9em 2em 0.9em 2em;
+        font-size: 1.4em;
+    }
+}

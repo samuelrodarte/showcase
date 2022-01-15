@@ -30,6 +30,33 @@ body {
   overflow-wrap: break-word;
 }
 
+@media (min-width: 620px) {
+  * {
+    font-size: 20px;
+  }
+
+  .main_h1 {
+    text-align: center;
+  }
+}
+@media (min-width: 960px) {
+  * {
+    font-size: 25px;
+  }
+
+  .main_h1 {
+    padding: 0 3.1em 0 3.1em;
+  }
+}
+@media (min-width: 1200px) {
+  * {
+    font-size: 30px;
+  }
+
+  .main_h1 {
+    padding: 0 3em 0 3em;
+  }
+}
 .head {
   background-image: url(../images/main-pic.jpg);
   background-position: 0px 0px, 50% 50%;
@@ -47,6 +74,15 @@ body {
   overflow-wrap: break-word;
 }
 
+@media (min-width: 620px) {
+  .head__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em 0 2em;
+  }
+}
 /*This is button*/
 .btn {
   text-align: start;
@@ -68,6 +104,18 @@ body {
 .super__btn {
   width: 110%;
   position: relative;
+}
+
+@media (min-width: 620px) {
+  .super__btn {
+    width: auto;
+  }
+
+  .btn {
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.9em 2em 0.9em 2em;
+    font-size: 1.4em;
+  }
 }
 
 /*# sourceMappingURL=start.css.map */

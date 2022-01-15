@@ -14,3 +14,37 @@ body{
     max-width: 100%;
     overflow-wrap: break-word;
 }
+
+@media (min-width: #{$width-small-tablets}) {
+*{
+    font-size: 20px;
+}
+
+    .main_h1{
+        text-align: center;
+       
+    }
+
+   
+}
+
+@media (min-width: #{$width-big-tablets}) {
+    *{
+        font-size: 25px;
+    }
+    .main_h1{
+        padding: 0 3.1em 0 3.1em;
+       
+    }
+        
+    }
+
+    @media (min-width: #{$width-desktop}) {
+        *{
+            font-size: 30px;
+        }
+        .main_h1{
+            padding: 0 3em 0 3em;
+        }
+            
+        }

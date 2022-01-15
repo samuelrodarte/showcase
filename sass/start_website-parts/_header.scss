@@ -1,7 +1,5 @@
-@use '../start_abstract';
-@media screen {
-    
-}
+@use '../start_abstract' as *;
+
 .head{
     background-image: url(../images/main-pic.jpg);
     background-position: 0px 0px, 50% 50%;
@@ -23,4 +21,15 @@
 
     }
 }
+
+@media (min-width: #{$width-small-tablets}) {
+    .head__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2em 0 2em;
+    }
+}
+
 
