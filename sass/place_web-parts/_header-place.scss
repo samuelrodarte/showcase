@@ -1,0 +1,15 @@
+@use '../abstract' as *;
+@use '../start_abstract' as s;
+
+header{
+    padding: 4em 3em 0 2em;
+}
+
+h1{
+    @include main-h1;
+    color: $black;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+

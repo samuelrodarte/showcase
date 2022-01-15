@@ -1,0 +1,13 @@
+@use '../start_abstract' as *;
+a{
+    text-decoration: none;
+    color: $black;
+&:active{
+    color: $black;
+}
+}
+body{
+    @include mar-padd0;
+    overflow: hidden;
+    
+}

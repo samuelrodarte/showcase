@@ -1,0 +1,39 @@
+@mixin marBott0 {
+    margin: 0;
+    bottom: 0;
+    
+}
+@mixin h3-dark {
+   
+    font-size: 1.4em;
+    text-transform: capitalize;
+    font-weight: 600;
+   
+}
+
+@mixin main-h1 {
+    $light-gray :#F9F9FA; 
+    color: $light-gray;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 1.3;
+    text-transform: capitalize;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+@mixin overflow {
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+@mixin purple-gradient-200deg {
+    $pu: rgba(255, 182, 250, 0.301);
+    $tras: #f9f9fa00;
+    background-image: linear-gradient(200deg,#{$pu} , #{$tras});
+}
+@mixin purple-gradient-180deg {
+    $pu: rgb(255, 182, 250);
+    $tras: #f9f9fa00;
+    background-image: linear-gradient(180deg,#{$tras} , #{$pu});
+}

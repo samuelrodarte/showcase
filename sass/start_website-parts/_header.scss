@@ -1,0 +1,26 @@
+@use '../start_abstract';
+@media screen {
+    
+}
+.head{
+    background-image: url(../images/main-pic.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    &__content{
+        
+        padding: 2em ;
+        
+        $pu: rgba(255, 182, 250, 0.301);
+        $tras: #f9f9fa00;
+        max-width: 100%;
+        height: 100%;
+        background-image: linear-gradient(200deg,#{$pu} , #{$tras});
+        overflow-wrap: break-word;
+
+    }
+}
+

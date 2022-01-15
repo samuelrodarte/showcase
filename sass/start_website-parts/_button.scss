@@ -1,0 +1,26 @@
+@use'../start_abstract' as *;
+/*This is button*/
+.btn{
+   text-align: start;
+   padding: 1.1em;
+   font-family: $website-font;
+   color: $black;
+   background-color: $light-gray;
+   font-size: 1.3em;
+   margin-top: 2em; 
+   font-weight: 600;
+   text-transform: capitalize;
+    border-radius: 10px 0 0 10px;
+   border-style: hidden;
+    i{
+        
+        margin-left: 1em;
+    }
+
+}      
+.super__btn{
+    width: 110%;
+    position: relative;
+    
+}
+

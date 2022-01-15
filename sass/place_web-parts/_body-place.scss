@@ -1,0 +1,17 @@
+@use '../abstract' as *;
+@use '../start_abstract' as s;
+
+.b{
+    background-color: $dark-gray;
+    font-family: $main-font;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+*{
+    @include marBott0;
+}
+

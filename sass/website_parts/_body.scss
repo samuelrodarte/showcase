@@ -1,0 +1,42 @@
+@use '../abstract' as *;
+@use '../start_abstract'as s;
+
+
+
+
+
+body{
+@include marBott0;
+  @include overflow;
+  font-family: $main-font;
+}
+
+.bg-gradient{
+   @include purple-gradient-180deg;
+   min-height: 100vh;
+   padding: 1.5em;
+}
+/*This is media*/
+
+
+
+@media (min-width: #{s.$width-big-tablets}) {
+
+    *{font-size: 20px;
+    }
+
+}
+
+@media (min-width: #{s.$width-small-tablets}) {
+   .bg-gradient{
+       padding: 2.5em;
+      
+   }
+
+}
+@media (min-width: #{s.$width-desktop}){
+    *{
+        font-size: 25px;
+    }
+}
+

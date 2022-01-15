@@ -1,0 +1,76 @@
+@use '../abstract' as *;
+@use '../start_abstract'as s;
+
+.search{
+    margin-bottom: 1em;
+}
+
+.search__side{
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em 1em 1em 1em;
+    @include overflow;
+    font-family: $main-font;
+    margin: 0 2em 0 2em;
+    border-radius: 10px;
+    position: relative;
+    top: -3em;
+    .side-t {
+       @include h3-dark;
+       @include marBott0;
+
+       ~ p{
+           text-transform: capitalize
+       }
+
+    }
+    
+}
+ .s-button{
+     background-color: $black;
+     width: 3em;
+     height: 3em;
+     border-radius: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1em;
+    
+    
+    i{
+        width: 2em;
+        color: $white;
+        position: absolute;
+        top: 32%;
+        right: 1%;
+        
+        }
+
+
+    }
+
+p{
+    @include marBott0;
+}
+
+/*This is screen*/
+@media (min-width: #{s.$width-small-tablets}) {
+    .search__side{
+        flex-direction: row;
+        
+        padding: 2em 2em 2em 2em;
+        .search{
+            margin-bottom: 0;
+        }
+    }
+    .s-button{
+        position: relative;
+        @include marBott0;
+    }
+
+
+
+}
+

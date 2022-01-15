@@ -1,0 +1,47 @@
+@use '../abstract' as *;
+@use '../start_abstract'as s;
+
+.main-h1{
+    @include main-h1;
+    @include marBott0;
+}
+
+
+
+.head{
+
+    @include marBott0;
+
+   min-height: 50vh;
+   background-image: url(../images/pex.jpg);
+   background-position: 31% 0%;
+   padding: 2em;
+   border-radius: 20px;
+}
+@media (min-width: #{s.$width-small-tablets}) {
+    .main-h1{
+        min-width: 50%;
+    }
+   .head{
+    min-height: 60vh;
+    background-position: cover ;
+    padding: 3em 3em 0 3em;
+   }
+}
+@media (min-width: #{s.$width-big-tablets}) {
+
+    *{font-size: 20px;
+    }
+    .main-h1{
+        width: 50%;
+    }
+   .head{
+    min-height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3em 0 0 3em;
+   }
+}
+
+
+
